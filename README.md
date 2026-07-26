@@ -10,38 +10,38 @@ A retroreflective sensor is used to coordinate conveyor sequencing and ensure pr
 ### Inputs
 | Address | Tag | Device | Description |
 |---------|-----|--------|-------------|
-| %IX20.0 | At Exit | Retroreflective Sensor | Detects When Product Leaves Conveyor System to be Extracted |
-| %IX20.1 | Start | White PushButton | Activates the Automatic Conveyor Sorting System |
-| %IX20.2 | Stop | Gray PushButton | Deactivates the Automatic Conveyor Sorting System |
-| %IX20.3 | Reset | Blue PushButton | Resets the Product Sorted Item Count |
+| %IX20.0 | At Exit | Retroreflective Sensor | Detects when product exits the conveyor system |
+| %IX20.1 | Start | White Pushbutton | Activates the automatic conveyor sorting system |
+| %IX20.2 | Stop | Gray Pushbutton | Deactivates the automatic conveyor sorting system |
+| %IX20.3 | Reset | Blue Pushbutton | Resets the product sorting counter |
 
 ### Outputs
 | Address | Tag | Device | Description |
 |---------|-----|--------|-------------|
-| %QX20.0 | EntryConveyor | Conveyor Motor | Controls Entry Conveyor |
-| %QX20.1 | StopBlade | Pneumatic Stopper | Ensures Product Positioning Prior to Sorting |
-| %QX20.2 | ExitConveyor | Conveyor Motor | Controls Exit Conveyor |
-| %QX20.3 | Sorter1Turn | Sorting Conveyor Motor | Controls Product 1 Diversion |
-| %QX20.4 | Sorter1Belt | Conveyor Motor | Controls Product 1 Conveyor |
-| %QX20.5 | Sorter2Turn | Sorting Conveyor Motor | Controls Product 2 Diversion |
-| %QX20.7 | Sorter2Belt | Conveyor Motor | Controls Product 2 Conveyor |
-| %QX20.8 | Sorter3Turn | Sorting Conveyor Motor | Controls Product 3 Diversion |
-| %QX21.0 | Sorter3Belt | Conveyor Motor | Controls Product 3 Conveyor |
-| %QX21.1 | StartLight | White Pilot Light | Indicates System Start |
-| %QX21.2 | StopLight | Gray Pilot Light | Indicates System Stop |
-| %QX21.3 | ResetLight | Blue Pilot Light | Indicates Counter Reset |
+| %QX20.0 | EntryConveyor | Conveyor Motor | Controls entry conveyor |
+| %QX20.1 | StopBlade | Pneumatic Stopper | Ensures product positioning prior to sorting |
+| %QX20.2 | ExitConveyor | Conveyor Motor | Controls exit conveyor |
+| %QX20.3 | Sorter1Turn | Sorting Conveyor Motor | Controls product 1 diversion |
+| %QX20.4 | Sorter1Belt | Conveyor Motor | Controls product 1 conveyor |
+| %QX20.5 | Sorter2Turn | Sorting Conveyor Motor | Controls product 2 diversion |
+| %QX20.7 | Sorter2Belt | Conveyor Motor | Controls product 2 conveyor |
+| %QX20.8 | Sorter3Turn | Sorting Conveyor Motor | Controls product 3 diversion |
+| %QX21.0 | Sorter3Belt | Conveyor Motor | Controls product 3 conveyor |
+| %QX21.1 | StartLight | White Pilot Light | Indicates system start |
+| %QX21.2 | StopLight | Gray Pilot Light | Indicates system stop |
+| %QX21.3 | ResetLight | Blue Pilot Light | Indicates counter reset operation |
 
 ### Register Inputs
 | Address | Tag | Device | Description |
 |---------|-----|--------|-------------|
-| %QW0 | Counter1 | Digital Display | Displays Product 1 Sorted Item Count |
-| %QW1 | Counter2 | Digital Display | Displays Product 2 Sorted Item Count |
-| %QW2 | Counter3 | Digital Display | Displays Product 3 Sorted Item Count |
+| %QW0 | Counter1 | Digital Display | Displays product 1 sorted item count |
+| %QW1 | Counter2 | Digital Display | Displays product 2 sorted item count |
+| %QW2 | Counter3 | Digital Display | Displays product 3 sorted item count |
 
 ### Holding Registers
 | Address | Tag | Device | Description |
 |---------|-----|--------|-------------|
-| %IW0 | VisionSensor | Vision Sensor | Detects and Temporarily Stores Product Color/Type |
+| %IW0 | VisionSensor | Vision Sensor | Detects and temporarily stores product color and type |
 
 ## Features
 - PLC ladder logic developed in CODESYS
