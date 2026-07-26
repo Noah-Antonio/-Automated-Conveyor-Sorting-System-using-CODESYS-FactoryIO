@@ -31,7 +31,9 @@ A retroreflective sensor is used to coordinate conveyor sequencing and ensure pr
 - Timer and Counter Instructions
 - Sequential Control
 - Material Handling Systems
-
+- Industrial I/O Mapping
+- Automation System Testing and Validation
+  
 ## I/O List
 
 ### Inputs
@@ -69,6 +71,3 @@ A retroreflective sensor is used to coordinate conveyor sequencing and ensure pr
 | Address | Tag | Device | Description |
 |---------|-----|--------|-------------|
 | %IW0 | VisionSensor | Vision Sensor | Detects and temporarily stores product color and type |
-
-- Industrial I/O Mapping
-- Automation System Testing and Validation
