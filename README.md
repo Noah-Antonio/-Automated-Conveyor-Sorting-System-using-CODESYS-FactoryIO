@@ -6,9 +6,18 @@ This project demonstrates the design and implementation of a PLC-based material 
 A retroreflective sensor is used to coordinate conveyor sequencing and ensure products are sorted at the correct time. The system also provides operator controls for starting, stopping, and resetting production counts while continuously tracking the number of successfully sorted items.
 
 ## I/O List
+
 ### Inputs
 | Address | Tag | Device | Description |
-|---------|--------|-------------|
+|---------|-----|--------|-------------|
+| %IX20.0 | At Exit | Retroreflective Sensor | Detects When Product Leaves Conveyor System to be Extracted |
+| %IX20.1 | Start | White PushButton | Activates the Automatic Conveyor Sorting System |
+| %IX20.2 | Stop | Gray PushButton | Deactivates the Automatic Conveyor Sorting System |
+| %IX20.3 | Reset | Blue PushButton | Resets the Product Sorted Item Count |
+
+### Outputs
+| Address | Tag | Device | Description |
+|---------|-----|--------|-------------|
 | %QX20.0 | EntryConveyor | Conveyor Motor | Controls Entry Conveyor |
 | %QX20.1 | StopBlade | Pneumatic Stopper | Ensures Product Positioning Prior to Sorting |
 | %QX20.2 | ExitConveyor | Conveyor Motor | Controls Exit Conveyor |
@@ -21,22 +30,17 @@ A retroreflective sensor is used to coordinate conveyor sequencing and ensure pr
 | %QX21.1 | StartLight | White Pilot Light | Indicates System Start |
 | %QX21.2 | StopLight | Gray Pilot Light | Indicates System Stop |
 | %QX21.3 | ResetLight | Blue Pilot Light | Indicates Counter Reset |
-### Outputs
-| Address | Tag | Device | Description |
-|---------|--------|-------------|
-| %IX20.0 | At Exit | Retroreflective Sensor | Detects When Product Leaves Conveyor System to be Extracted |
-| %IX20.1 | Start | White PushButton | Activates the Automatic Conveyor Sorting System |
-| %IX20.2 | Stop | Gray PushButton | Deactivates the Automatic Conveyor Sorting System |
-| %IX20.3 | Reset | Blue PushButton | Resets the Product Sorted Item Count |
+
 ### Register Inputs
 | Address | Tag | Device | Description |
-|---------|--------|-------------|
+|---------|-----|--------|-------------|
 | %QW0 | Counter1 | Digital Display | Displays Product 1 Sorted Item Count |
 | %QW1 | Counter2 | Digital Display | Displays Product 2 Sorted Item Count |
 | %QW2 | Counter3 | Digital Display | Displays Product 3 Sorted Item Count |
+
 ### Holding Registers
 | Address | Tag | Device | Description |
-|---------|--------|-------------|
+|---------|-----|--------|-------------|
 | %IW0 | VisionSensor | Vision Sensor | Detects and Temporarily Stores Product Color/Type |
 
 ## Features
