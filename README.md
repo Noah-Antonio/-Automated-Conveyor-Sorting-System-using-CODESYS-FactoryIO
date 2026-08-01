@@ -5,6 +5,8 @@ This project demonstrates the design and implementation of a PLC-based material 
 
 A retroreflective sensor is used to coordinate conveyor sequencing and ensure products are sorted at the correct time. The system also provides operator controls for starting, stopping, and resetting production counts while continuously tracking the number of successfully sorted items.
 
+
+
 ## Features
 - PLC ladder logic developed in CODESYS
 - 3D industrial simulation using Factory I/O
@@ -15,12 +17,16 @@ A retroreflective sensor is used to coordinate conveyor sequencing and ensure pr
 - Item counting with reset functionality
 - Start and stop operator controls
 - Fully simulated industrial automation cell
+
+
   
 ## Technologies
-- CODESYS
-- Factory I/O
-- Modbus TCP/IP
-- IEC 61131-3 Ladder Diagram (LD)
+- **CODESYS**
+- **Factory I/O**
+- **Modbus TCP/IP Communication**
+- **IEC 61131-3 Ladder Diagram (LD)**
+
+
   
 ## Engineering Concepts Demonstrated
 - PLC Programming
