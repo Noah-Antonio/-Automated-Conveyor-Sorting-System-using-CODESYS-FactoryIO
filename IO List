@@ -7,7 +7,9 @@
 | %IX20.0 | Product_Exit_Sensor | Retroreflective Sensor | Detects when product exits the conveyor system |
 | %IX20.1 | Start_CMD | White Pushbutton | Activates automatic conveyor sorting operation |
 | %IX20.2 | Stop_CMD | Gray Pushbutton | Stops automatic conveyor sorting operation |
-| %IX20.3 | Reset_CMD | Blue Pushbutton | Resets product sorting counter values |
+| %IX20.3 | Reset_Count_CMD | Blue Pushbutton | Resets product sorting counter values |
+| %IX20.4 | Emergency_Stop | Emergency Stop Button | Immediately stops all system motion and disables outputs |
+| %IX20.5 | Emergency_Reset | Red Pushbutton | Resets emergency stop condition after fault is cleared |
 
 ### Digital Outputs
 
@@ -24,7 +26,8 @@
 | %QX21.0 | Sorter3_Belt_CMD | Conveyor Motor | Controls product type 3 conveyor |
 | %QX21.1 | Start_Status_Light | White Pilot Light | Indicates system start status |
 | %QX21.2 | Stop_Status_Light | Gray Pilot Light | Indicates system stop status |
-| %QX21.3 | Reset_Status_Light | Blue Pilot Light | Indicates counter reset operation |
+| %QX21.3 | Reset_Count_Status_Light | Blue Pilot Light | Indicates counter reset operation |
+| %QX21.4 | Emergency_Status_Light | Red Pilot Light | Indicates emergency stop condition is active |
 
 ### Register Inputs
 
