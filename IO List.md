@@ -8,8 +8,8 @@
 | %IX20.1 | Start_CMD | White Pushbutton | Activates automatic conveyor sorting operation |
 | %IX20.2 | Stop_CMD | Gray Pushbutton | Stops automatic conveyor sorting operation |
 | %IX20.3 | Reset_Count_CMD | Blue Pushbutton | Resets product sorting counter values |
-| %IX20.4 | Emergency_Stop | Emergency Stop Button | Immediately stops all system motion and disables outputs |
-| %IX20.5 | Emergency_Reset | Red Pushbutton | Resets emergency stop condition after fault is cleared |
+| %IX20.4 | Emergency_Stop_CMD | Emergency Stop Button | Immediately stops all system motion and disables outputs |
+| %IX20.5 | Emergency_Reset_CMD | Red Pushbutton | Resets emergency stop condition after fault is cleared |
 
 ### Digital Outputs
 
